@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+input {
+  border: 0;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #fff;
+}
+
+.Brand {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.Brand header {
+  flex-basis: 4.9333333333rem;
+  display: flex;
+  flex-direction: column;
+}
+.Brand header .Brand-topNav {
+  background-color: #ff841d;
+  width: 100%;
+  flex-basis: 1.36rem;
+  padding: 0 0.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Brand header .Brand-topNav .Brand-logo {
+  height: 0.6666666667rem;
+}
+.Brand header .Brand-topNav .Brand-logo img {
+  height: 100%;
+}
+.Brand header .Brand-topNav .Brand-load {
+  height: 0.9066666667rem;
+}
+.Brand header .Brand-topNav .Brand-load img {
+  height: 100%;
+}
+.Brand header .Brand-searchBar {
+  padding: 0 0.2rem;
+  width: 100%;
+  flex-basis: 1.36rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Brand header .Brand-searchBar .Brand-text {
+  margin-bottom: 0rem;
+  height: 0.8rem;
+  width: 8rem;
+  border: 0;
+  border-radius: 0.5333333333rem;
+  background-color: #f1f1f1;
+  font-size: 0.4266666667rem;
+  padding-left: 0.4rem;
+  position: absolute;
+  left: 0.4rem;
+}
+.Brand header .Brand-searchBar .Brand-search {
+  right: 0.4rem;
+  height: 0.8rem;
+  width: 1.68rem;
+  border-radius: 0.5333333333rem;
+  background: #ff841d;
+  border: 0;
+  color: white;
+  position: absolute;
+  font-size: 0.4266666667rem;
+}
+.Brand header .Brand-nav {
+  padding-left: 0.2133333333rem;
+  display: flex;
+  align-items: center;
+  font-size: 0.3733333333rem;
+  flex-basis: 1.0133333333rem;
+  background-color: #f7f7f7;
+  color: #666;
+}
+.Brand header .Brand-nav a {
+  color: #666;
+}
+.Brand header .Brand-title {
+  margin: 0.1333333333rem 0.0666666667rem;
+  flex-basis: 1.0666666667rem;
+  color: #874604;
+  font-size: 0.4266666667rem;
+  border: 1px solid #ccc;
+  line-height: 1.0666666667rem;
+  padding-left: 0.1333333333rem;
+  background-color: #eeeeee;
+}
+.Brand main {
+  background-color: #f2f2f2;
+  position: relative;
+  height: 100%;
+  flex: 1;
+}
+.Brand main .mui-scroll-wrapper .mui-scroll {
+  background-color: #f2f2f2;
+}
+.Brand main .mui-scroll-wrapper .mui-scroll .con {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 0.4rem;
+  padding-left: 0.1333333333rem;
+  border-bottom: 1px solid #ccc;
+  height: 1.2rem;
+}
+.Brand main .mui-scroll-wrapper .mui-scroll .con a {
+  color: #000;
+  font-weight: bold;
+}
+.Brand main .mui-scroll-wrapper .mui-scroll .Brand-login {
+  display: flex;
+  justify-content: space-around;
+}
+.Brand main .mui-scroll-wrapper .mui-scroll .Brand-login a {
+  color: #000;
+  height: 0.8rem;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  line-height: 0.8rem;
+  text-align: center;
+}
+.Brand main .mui-scroll-wrapper .mui-scroll .Brand-more {
+  margin-top: 0.2666666667rem;
+}
+.Brand main .mui-scroll-wrapper .mui-scroll .Brand-more .mm {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+.Brand main .mui-scroll-wrapper .mui-scroll .Brand-more .mm p {
+  margin-bottom: 0;
+}
+.Brand main .mui-scroll-wrapper .mui-scroll .Brand-more .mm p a {
+  color: red;
+}
+.Brand main .mui-scroll-wrapper .mui-scroll .Brand-more .com {
+  text-align: center;
+}
+.Brand footer {
+  z-index: 30;
+  background-color: #fff;
+  flex-basis: 1.3333333333rem;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.2666666667rem 0;
+}
+.Brand footer .left {
+  display: flex;
+}
+.Brand footer .left .Brand-close {
+  height: 0.5333333333rem;
+  margin: 0.16rem;
+}
+.Brand footer .left .Brand-pic {
+  height: 0.96rem;
+  padding-left: 0.2rem;
+  vertical-align: middle;
+}
+.Brand footer .left .Brand-buttom-title {
+  padding-left: 0.2rem;
+}
+.Brand footer .left .Brand-buttom-title .title1 {
+  font-size: 0.4266666667rem;
+  margin-bottom: 0;
+}
+.Brand footer .left .Brand-buttom-title .title2 {
+  font-size: 0.32rem;
+  margin-bottom: 0;
+}
+.Brand footer .Brand-open {
+  width: 2.0533333333rem;
+  height: 0.88rem;
+  border: 1px solid #000;
+  background-color: #ff841d;
+  border: 0;
+  border-radius: 0.2rem;
+  float: right;
+}
+
+/*# sourceMappingURL=Brand.css.map */

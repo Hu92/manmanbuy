@@ -1,0 +1,142 @@
+@import "./common.scss";
+body {
+    background-color: #fff;
+}
+.head {
+    display: flex;
+    height:pr(88);
+    background-color: #f4483e;
+    justify-content: space-between;
+    align-items: center;
+    .back {
+        margin-left: pr(10);
+        span {
+            font-size: 26px;
+            color:#fff;
+
+        }
+    }
+    h1 {
+        font-size: 20px;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+        margin-left: pr(40);
+    }
+    .home {
+        margin-right: pr(38);
+        a{
+            width: pr(44);
+            height:100%;
+            img {
+                width: pr(65);
+                margin-top: pr(10);
+            }
+        }
+    }
+}
+.bd {
+    margin: pr(25) 0;
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            width: pr(232);
+            height: pr(160);
+            border: pr(1) solid #eee;
+            // padding: pr(5);
+            margin: pr(8);
+            
+            a {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                // padding: pr(5);
+                img {
+                    width: pr(100);
+                }
+                p {
+                    margin: 0;
+                    font-size: pr(18);
+                    color: #666;
+                }
+            }
+        }
+    }
+}
+.nav {
+    height: pr(72);
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #cccccc;
+    margin-top: pr(50);
+    background: linear-gradient(#fff, #ececec); /* 标准的语法（必须放在最后） */
+    a {
+        font-size: pr(28);
+        color: #000;
+        line-height: pr(72);
+        
+        &:nth-child(1){
+            padding-left: pr(15);
+        }
+    }
+}
+.bottom {
+    height: pr(192);
+    background-color: #efefef;
+    .foot_top {
+        margin-top: pr(50);
+        display: flex;
+        a {
+            color: #000;
+            height: pr(68);
+            text-align: center;
+            // flex: 1;
+            width: pr(222);
+            border: 1px solid #c4c4c4;
+            line-height: pr(68);
+            font-size: pr(28);
+            &:nth-child(1){
+                border-left: none;
+            }
+            &:nth-child(3){
+                border-right: none;
+                width: pr(300);
+                img {
+                    width: pr(30);
+                    display: inline-block;
+                    
+                }
+            }
+
+        }
+    }
+    .foot_di {
+        .box {
+            padding: pr(37) 0;
+            p {
+                text-align: center;
+                margin: 0;
+                line-height:pr(36);
+                .app {
+                    color: #ff0000;
+                }
+                .man {
+                    color: #000000;
+                }
+                &:nth-child(1){
+                    font-size: pr(24)
+                    
+                }
+                &:nth-child(2){
+                    font-size: pr(20);
+                    line-height:pr(26);
+                }
+            }
+        }
+        
+    }
+}
+

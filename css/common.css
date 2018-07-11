@@ -1,0 +1,75 @@
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img, p, b {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+input {
+  vertical-align: middle;
+  border: 0;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: #9a9a9a;
+}
+
+html, body {
+  height: 100%;
+  font-size: 14px;
+  background-color: #fff;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container .header {
+  flex-basis: 1.1733333333rem;
+  background-color: #fe4a65;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.container .header .logo {
+  color: #fff;
+  font-size: 0.4266666667rem;
+  font-weight: 700;
+  margin-left: 0.1333333333rem;
+}
+.container .header .searchbar {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: 0.3733333333rem;
+}
+.container .header .searchbar input {
+  padding: 0 0.2666666667rem;
+  border: 0;
+  margin: 0;
+  width: 7.1733333333rem;
+  height: 0.7466666667rem;
+  font-size: 0.3733333333rem;
+  border-radius: 0.1333333333rem;
+  font-size: 0.32rem;
+}
+.container .header .icon {
+  color: #fff;
+}
+.container .header .icon span {
+  margin-right: 0.4rem;
+  font-size: 0.4266666667rem;
+}
+.container .content {
+  flex: 1;
+  position: relative;
+}
+
+/*# sourceMappingURL=common.css.map */

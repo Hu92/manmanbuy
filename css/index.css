@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.top {
+  height: 50px;
+  background: #ff841d;
+  border-bottom: 1px solid #e6e6e6;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 10px;
+}
+.top .logo {
+  flex: 1;
+  overflow: hidden;
+}
+.top .logo img {
+  max-width: 185px;
+  max-height: 25px;
+  overflow: hidden;
+}
+.top .app {
+  flex-basis: 30px;
+}
+.top .app img {
+  max-width: 30px;
+}
+
+.search {
+  height: 50px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.search .searchtxt {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  justify-content: center;
+  position: relative;
+}
+.search .searchtxt .txt {
+  flex: 1;
+  height: 30px;
+  width: 90%;
+  border-radius: 15px;
+  padding: 10px;
+  background: #f1f1f1;
+}
+.search .searchtxt .searchbar {
+  position: absolute;
+  width: 60px;
+  line-height: 30px;
+  height: 30px;
+  top: 10px;
+  right: 10px;
+  background: #ff841d;
+  font-size: 16px;
+  color: white;
+  border-radius: 15px;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  padding: 10px 0;
+}
+.main .ullist {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.main .ullist li {
+  width: 25%;
+  display: flex;
+  justify-content: space-around;
+  margin: 5px 0;
+}
+.main .ullist li a {
+  font-size: 12px;
+  color: black;
+}
+.main .ullist li img {
+  width: 50px;
+}
+.main .recommend {
+  border-top: 2px solid #f7f7f7;
+  margin-top: 10px;
+  height: 36px;
+  background: #ffa229;
+}
+.main .recommend a {
+  height: 36px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .recommend a span {
+  color: white;
+  font-weight: bold;
+  padding-bottom: 4px;
+  font-size: 20px;
+}
+.main .recommend a img {
+  width: 20px;
+}
+.main .catalogue {
+  position: relative;
+  padding: 14px 8px;
+  margin-bottom: 30px;
+  border-top: 1px solid #e6e6e6;
+}
+.main .catalogue .pic {
+  float: left;
+  width: 110px;
+}
+.main .catalogue .pic img {
+  width: 100px;
+  height: 100px;
+}
+.main .catalogue .info {
+  padding-left: 90px;
+  line-height: 24px;
+  font-size: 14px;
+  zoom: 1;
+}
+.main .catalogue .info .title {
+  color: #333;
+  font-size: 15px;
+  line-height: 19px;
+  min-height: 57px;
+  text-align: left;
+  word-break: break-all;
+}
+.main .catalogue .info .title span {
+  color: #ff6c00;
+  display: inline;
+}
+.main .catalogue .info .other {
+  margin-top: 8px;
+  color: #a1a1a1;
+}
+.main .catalogue .info .other .mall {
+  font-size: 12px;
+  float: left;
+}
+.main .catalogue .info .other .comment {
+  float: right;
+  color: #a1a1a1;
+  font-size: 12px;
+  margin-bottom: 2px;
+}
+.main .catalogue .info .other .comment i {
+  width: 13px;
+  height: 13px;
+  margin-right: 3px;
+  display: inline;
+}
+.main .more {
+  padding: 15px;
+  border-top: 1px solid #e6e6e6;
+  background: #f7f7f7;
+}
+.main .more input {
+  width: 100%;
+  height: 32px;
+  background: #c4c4c4;
+  border-radius: 5px;
+  font-size: 13px;
+}
+.main .ranking {
+  margin-top: 10px;
+  background: #ff9811;
+  width: 100%;
+  height: 35px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 35px;
+  color: white;
+  padding-left: 10px;
+}
+.main .foot .foot-top {
+  margin-top: 10px;
+  background: #efefef;
+  width: 100%;
+  height: 34px;
+  line-height: 34px;
+  border-top: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+  clear: both;
+}
+.main .foot .foot-top .login {
+  float: left;
+  font-size: 14px;
+  border-right: 1px solid #c4c4c4;
+  text-align: center;
+  width: 30%;
+  clear: both;
+}
+.main .foot .foot-top .res {
+  float: left;
+  font-size: 14px;
+  border-right: 1px solid #c4c4c4;
+  text-align: center;
+  width: 30%;
+}
+.main .foot .foot-top .getback {
+  float: right;
+  width: 40%;
+  font-size: 14px;
+  padding-left: 28px;
+}
+.main .foot .foot-top .getback img {
+  float: left;
+  clear: both;
+  width: 14px;
+  height: 14px;
+  margin-top: 9px;
+  margin-right: 3px;
+}
+.main .foot .footer {
+  width: 100%;
+  background: #efefef;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px 0;
+  color: #666;
+}
+
+/*# sourceMappingURL=index.css.map */

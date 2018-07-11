@@ -1,0 +1,164 @@
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img, p, b {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+input {
+  vertical-align: middle;
+  border: 0;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: #9a9a9a;
+}
+
+html, body {
+  height: 100%;
+  background-color: white !important;
+  color: black;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container .head {
+  width: 100%;
+  flex-basis: 44px;
+  background-color: #ff841d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .head .back {
+  flex-basis: 50px;
+  height: 44px;
+}
+.container .head .back a {
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-align: center;
+  line-height: 44px;
+}
+.container .head h1 {
+  flex: 1;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+.container .head .home {
+  flex-basis: 50px;
+  height: 44px;
+}
+.container .head .home a {
+  width: 100%;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .head .home a img {
+  width: 60%;
+}
+.container .bottom {
+  flex-basis: 94px;
+}
+.container .main {
+  width: 100%;
+  position: relative;
+  flex: 1;
+}
+.container .main ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.container .main ul li {
+  width: 50%;
+  border-bottom: solid 1px #eeeeee;
+  background-color: #ffffff;
+}
+.container .main ul li:nth-child(even) {
+  border-left: solid 1px #eeeeee;
+}
+.container .main ul li .goods {
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+.container .main ul li .goods .img {
+  width: 140px;
+  height: 140px;
+  margin: 8px auto;
+}
+.container .main ul li .goods .img img {
+  width: 140px;
+  height: 140px;
+}
+.container .main ul li .goods p {
+  margin: 5px 0;
+}
+.container .main ul li .goods .title {
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 18px;
+  height: 36px;
+}
+.container .main ul li .goods .price {
+  color: #ff6c00;
+}
+.container .main ul li .goods .info {
+  color: #a1a1a1;
+  font-size: 12px;
+}
+.container .shang {
+  display: flex;
+  width: 100%;
+  height: 34px;
+  background-color: #efefef;
+}
+.container .shang a {
+  width: 30%;
+  height: 34px;
+  text-align: center;
+  line-height: 34px;
+  background-color: #efefef;
+}
+.container .shang a#toping {
+  flex: 1;
+}
+.container .shang img {
+  width: 14px;
+}
+.container .xia {
+  width: 100%;
+  height: 60px;
+  padding: 15px 0px;
+}
+.container .xia p {
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}
+.container .xia a {
+  font-size: 12px;
+}
+.container .xia .red {
+  color: red;
+}
+.container .xia .black {
+  color: black;
+}
+
+/*# sourceMappingURL=homeDiscount.css.map */

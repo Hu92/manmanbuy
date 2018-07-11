@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买首页</title>
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./lib/jquery/jquery.min.js"></script>
+    
+    <script src="./js/index.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <script>
+        // document.querySelector("html").style.fontSize = window.screen.width / 10 + "px";
+    </script>
+</head>
+
+<body>
+    <div style="position: fixed;right: 0;bottom: 20px;z-index: 999;">
+        <a href="">
+            <img src="./images/TB2WepTeb1J.eBjSszcXXbFzVXa_!!379516416.png" alt="" style="width: 64px;">
+        </a>
+    </div>
+    <!-- 头部logo -->
+    <div class="top">
+        <a href="" class="logo">
+            <img src="./images/TB2cMR0aQUmBKNjSZFOXXab2XXa_!!690311.png" alt="">
+        </a>
+        <a href="" class="app">
+            <img src="./images/TB2beKvaTXYBeNkHFrdXXciuVXa_!!690311.png" alt="">
+        </a>
+    </div>
+    <!-- 头部搜索 -->
+    <div class="search">
+        <div class="searchtxt">
+            <input type="text" class="txt" placeholder="请输入你想比价的商品">
+            <input type="submit" class="searchbar" value="搜索">
+        </div>
+    </div>
+    <!-- 分类 -->
+    <div class="main">
+        <ul class="ullist">
+            <!-- <li><a href=""><img src="./images/ic_search.png" alt="">比价搜索</a></li> -->
+        </ul>
+        <div class="recommend">
+            <a href="">
+                <span>超值折扣推荐</span>
+                <img src="./images/more.png" alt="">
+            </a>
+        </div>
+        <ul class="vray">
+            <!-- <li class="catalogue">
+                <a href="" class="tiaozhuan">
+                    <div class="pic">
+                        <img src="./images/0bbc1b7af9304c3997f96a32d485565f.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="title">
+                            <a href="" class="brand">FUCHS 福斯 泰坦 GT1 全合成机油 5W-30 C3级 1L *3件 +凑单品 </a>
+                            <span>141.2元包邮（合47.07元/件）</span>
+                        </div> 
+                        <div class="other">
+                            <span class="mall">苏宁易购|07-06 10：35</span>
+                            <span class="comment">
+                                <i class="glyphicon glyphicon-comment"></i>
+                                0
+                            </span>
+                        </div>
+                    </div>
+                </a>  
+            </li> -->
+        </ul>
+        <div class="more">
+            <input type="button" value="更多提示信息>>">
+        </div>
+        <div class="ranking">
+            品牌排行
+        </div>
+        <div class="foot">
+            <div class="foot-top">
+                <a href="" class="login">登陆</a>
+                <a href="" class="res">注册</a>
+                <a href="" class="getback">
+                    <img src="./images/top.jpg" alt="">返回顶部</a>
+            </div>
+            <div class="footer">
+                <p class="load">
+                    <a href="" style="color: red">手机APP下载</a>
+                    <a href="">慢慢卖手机版</a>
+                    "-- 掌上比价平台"
+                </p>
+                <p>
+                    m.manmanbuy.com
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- 分类 -->
+<script type="text/html" id="list">
+
+    {{each result}}
+        <li style="display: none;">
+            <a href="{{$value.titlehref}}">
+                {{#$value.img}} {{$value.name}}
+            </a>
+        </li>
+    {{/each}}
+</script>
+<!-- 商品 -->
+<script type="text/html" id="userinfo">
+    {{each result}}
+    <li class="catalogue">
+        <a href="javascript: goto('03.3-gnzk.html?productId={{$value.productId}}');" class="tiaozhuan">
+            <div class="pic">
+                {{#$value.productImgSm}}
+            </div>
+            <div class="info">
+                <div class="title">
+                    <a href="javascript: goto('03.3-gnzk.html?productId={{$value.productId}}');" class="brand">{{$value.productName}}</a>
+                    <span>{{$value.productPinkage}}</span>
+                </div>
+                <div class="other">
+                    <span class="mall">苏宁易购|{{$value.productTime}}</span>
+                    <span class="comment">
+                        <i class="glyphicon glyphicon-comment"></i>
+                        {{$value.productComCount}}
+                    </span>
+                </div>
+            </div>
+        </a>
+    </li>
+    {{/each}}
+</script>
+
+</html>
+<script>
+    // 从当前页跳转到某页
+ function goto(url) {
+    window.sessionStorage.setItem("lastpage", window.location.href);
+    window.location.href = url;
+}
+
+//从当前页，返回上一级页面
+function back () {
+    var lasturl = window.sessionStorage.getItem("lastpage");
+    if (!lasturl) lasturl = "./index.html";
+    window.location.href = lasturl;
+    window.sessionStorage.removeItem("lastpage");
+}
+</script>

@@ -1,0 +1,83 @@
+html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img,p,b{
+	margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+ul {
+	list-style:none;
+}
+input {
+	vertical-align:middle;
+	border: 0;
+    outline: none;
+    
+}
+a{
+    text-decoration: none;
+    color: #9a9a9a;
+}
+html,body{
+    height: 100%;
+    font-size: 14px;
+    background-color: #fff;
+    
+}
+
+
+@function pr($p) {
+    @return $p/75+rem;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .header{
+        flex-basis: pr(88);
+        background-color: #fe4a65;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        // logo
+        .logo{
+            color: #fff;
+            font-size: pr(32);
+            font-weight: 700;
+            margin-left: pr(10);
+        }
+        // 搜索框
+        .searchbar{
+            display: flex;
+            align-items: center;
+            height: 100%;
+            font-size: pr(28);
+            input{
+                padding: 0 pr(20);
+                border: 0;
+                margin: 0;
+                width: pr(538);
+                height: pr(56);
+                font-size: pr(28);
+                border-radius: pr(10);
+                font-size: pr(24);
+                
+            }
+        }
+        // 字体图标
+        .icon{
+            color: #fff;
+            span{
+                margin-right: pr(30);
+                font-size: pr(32);
+            }
+        }
+          
+    }
+    // 内部滚动
+    .content{
+        flex: 1;
+        position: relative;
+              
+    }
+}

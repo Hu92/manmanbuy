@@ -1,0 +1,224 @@
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img,
+p,
+b {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+input {
+  vertical-align: middle;
+  border: 0;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: #9a9a9a;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 14px;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.container .mui-scroll .topbar {
+  background-color: #ff841d;
+  height: 1.3333333333rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .mui-scroll .topbar .logo {
+  height: 100%;
+  padding: 0.3333333333rem 0.1333333333rem;
+}
+.container .mui-scroll .topbar .logo a img {
+  width: 4.96rem;
+  margin-left: 0.4rem;
+}
+.container .mui-scroll .topbar .appload {
+  padding: 0.2rem 0.16rem;
+  height: 100%;
+}
+.container .mui-scroll .topbar .appload a img {
+  width: 0.9066666667rem;
+}
+.container .mui-scroll .searchbar {
+  height: 1.36rem;
+  border-bottom: 0.0133333333rem solid #ccc;
+  background-color: #fff;
+  padding: 0.2666666667rem;
+  position: relative;
+}
+.container .mui-scroll .searchbar .search {
+  height: 0.8rem;
+  background-color: #f1f1f1;
+  border-radius: 0.4rem;
+  border: none;
+  outline: none;
+  padding: 0rem 0.5333333333rem;
+}
+.container .mui-scroll .searchbar .ssbtn {
+  position: absolute;
+  height: 0.8rem;
+  width: 1.6933333333rem;
+  background-color: #ff841d;
+  border-radius: 0.4rem;
+  right: 0.2666666667rem;
+  top: 0.2666666667rem;
+  color: #fff;
+}
+.container .mui-scroll .box {
+  width: 100%;
+  position: relative;
+  padding: 0.1333333333rem 0.1333333333rem 0rem 0.1333333333rem;
+}
+.container .mui-scroll .box .list {
+  width: 100%;
+  border: 0.0133333333rem solid #ccc;
+  height: 100%;
+}
+.container .mui-scroll .box .list ul {
+  width: 100%;
+  display: none;
+}
+.container .mui-scroll .box .list ul li {
+  width: 33.3333333333%;
+  float: left;
+  height: 1.0666666667rem;
+  text-align: center;
+  line-height: 1.0666666667rem;
+  border: 1px solid #ccc;
+}
+.container .mui-scroll .box .list ul li a {
+  color: #000;
+}
+.container .mui-scroll .box .list ul.active {
+  display: block;
+}
+.container .mui-scroll .box .list .dropdown-toggle {
+  width: 100%;
+  height: 1.0933333333rem;
+  border-bottom: 0.0133333333rem solid #ccc;
+  padding-left: 0.4266666667rem;
+  padding-right: 0.2933333333rem;
+  font-size: 0.4666666667rem;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .mui-scroll .box .list .dropdown-toggle .categotytitle {
+  color: #000;
+}
+.container .mui-scroll .box .list .dropdown-toggle .mui-icon-arrowdown {
+  color: #9d9d9d;
+}
+.container .mui-scroll .box .seccategory {
+  background-color: #fff;
+  width: 100%;
+  border-bottom: 0.04rem solid #888888;
+  display: flex;
+  flex-wrap: wrap;
+}
+.container .mui-scroll .box .seccategory a {
+  width: 33.33333%;
+  height: 1.0666666667rem;
+  border-bottom: 0.0133333333rem solid #ccc;
+  border-right: 0.0133333333rem solid #ccc;
+  text-align: center;
+  line-height: 1.0666666667rem;
+}
+.container .mui-scroll .box .seccategory a:nth-child(3n) {
+  border-right: none;
+}
+.container .footer {
+  display: flex;
+  flex-direction: column;
+  height: 2.56rem;
+  margin-top: 0.6666666667rem;
+}
+.container .footer .foottop {
+  border-top: 0.0133333333rem solid #ccc;
+  border-bottom: 0.0133333333rem solid #ccc;
+  height: 0.9066666667rem;
+  display: flex;
+  align-items: center;
+}
+.container .footer .foottop a {
+  display: inline-block;
+  height: 100%;
+  font-size: 0.3733333333rem;
+  width: 30%;
+  text-align: center;
+  line-height: 0.9066666667rem;
+  border-right: 0.0133333333rem solid #c4c4c4;
+}
+.container .footer .foottop a:nth-child(3) {
+  border-right: none;
+  padding-left: 0.8rem;
+}
+.container .footer .foottop a:nth-child(3) img {
+  height: 0.3733333333rem;
+}
+.container .footer .footbottom {
+  height: 1.6rem;
+  padding: 0.4rem 0rem;
+  text-align: center;
+}
+.container .footer .footbottom .download {
+  height: 0.4266666667rem;
+  font-size: 0.32rem;
+  margin-bottom: 0rem;
+}
+.container .footer .footbottom .download a {
+  color: #5a5a5a;
+  font-size: 0.32rem;
+}
+.container .footer .footbottom .download a:nth-child(1) {
+  color: red;
+  margin-right: 0.1333333333rem;
+}
+.container .footer .footbottom .address {
+  height: 0.36rem;
+  font-size: 0.32rem;
+}
+
+/*# sourceMappingURL=search.css.map */

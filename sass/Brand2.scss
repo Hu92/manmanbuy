@@ -1,0 +1,269 @@
+@function rem($px) {
+    @return $px/75+rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+input {
+    border: 0;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: #fff;
+}
+
+.Brand {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    header {
+        flex-basis: rem(280);
+        display: flex;
+        flex-direction: column;
+        .Brand-topNav {
+            background-color: #ff841d;
+            width: 100%;
+            flex-basis: rem(102);
+            padding: 0 rem(30);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .Brand-logo {
+                height: rem(50);
+                img {
+                    height: 100%;
+                }
+            }
+            .Brand-load {
+                height: rem(68);
+                img {
+                    height: 100%;
+                }
+            }
+        }
+        .Brand-searchBar {
+            padding: 0 rem(15);
+            width: 100%;
+            flex-basis: rem(102);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .Brand-text {
+                margin-bottom: rem(0);
+                height: rem(60);
+                width: rem(600);
+                border: 0;
+                border-radius: rem(40);
+                background-color: #f1f1f1;
+                font-size: rem(32);
+                padding-left: rem(30);
+                position: absolute;
+                left: rem(30);
+            }
+            .Brand-search {
+                right: rem(30);
+                height: rem(60);
+                width: rem(126);
+                border-radius: rem(40);
+                background: #ff841d;
+                border: 0;
+                color: white;
+                position: absolute;
+                font-size: rem(32);
+            }
+        }
+        .Brand-nav {
+            padding-left: rem(16);
+            display: flex;
+            align-items: center;
+            font-size: rem(28);
+            flex-basis: rem(76);
+            background-color: #f7f7f7;
+            color: #666;
+            a {
+                color: #666;
+                &:nth-child(5){
+                    color: #000;
+                }
+            }
+        }
+    }
+    main {
+        background-color: #f2f2f2;
+        position: relative;
+        height: 100%;
+        flex: 1;
+        // margin-bottom: rem(20);
+        .mui-scroll-wrapper {
+            .mui-scroll {
+                // position: absolute;
+                // height: 100%;
+                background-color: #f2f2f2;
+                .content{
+                    .Brand-sortlist{
+                        display: flex;
+                        justify-content: space-between;
+                        height: rem(100);
+                        align-items: center;
+                        padding-left: rem(10);
+                        .sortlist-left{
+                            display: flex;
+                            align-items: flex-start;
+                            .txt{
+                                // border: 1px solid #000;
+                                margin: rem(20);
+                                margin-top: rem(10);
+                                width: rem(40);
+                                height: rem(40);
+                                text-align: center;
+                                background-color: #c9c9c9;
+                                color: #fff;
+                                &.red{
+                                    background-color: red;
+                                }
+                                &.orange{
+                                    background-color: orange;
+                                }
+                                &.green{
+                                    background-color: green;
+                                }
+                            }
+                            .inner{
+                                display: flex;
+                                flex-direction: column;
+                                .tit{
+                                    margin-bottom: 0;
+                                    color: #000;
+                                    font-size: rem(32);
+                                }
+                                .titsm{
+                                    margin-bottom: 0;
+                                    font-size: rem(24);
+                                }
+                            }
+                        }
+                    }
+                }
+                .Brand-title{
+                    color: #874604;
+                    font-size: rem(28);
+                    font-weight: bold;
+                    border: 1px solid #ccc;
+                    line-height: rem(70);
+                    padding-left: rem(10);
+                    background-color: #eeeeee;
+                }
+                .tvtoplist{
+                    .tvlist{
+                        display: flex;
+                        justify-content: space-between;
+                        .img{
+                            flex-basis: rem(100);
+                            width: rem(100);
+                            height: rem(100);
+                        }
+                        .tvlisttit{
+                            display: flex;
+                            flex: 1;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                }
+                .Brand-login {
+                    display: flex;
+                    justify-content: space-around;
+                    a {
+                        color: #000;
+                        height: rem(60);
+                        width: 100%;
+                        border-top: 1px solid #ccc;
+                        border-bottom: 1px solid #ccc;
+                        border-right: 1px solid #ccc;
+                        line-height: rem(60);
+                        text-align: center;
+                    } // position: absolute;
+                }
+                .Brand-more {
+                        margin-top: rem(20);
+                    .mm {
+                        display: flex;
+                        justify-content: center;
+                        margin-bottom: 0;
+                        p {
+                            margin-bottom: 0;
+                            a {
+                                color: red;
+                            }
+                        }
+                    }
+                    .com {
+                        text-align: center;
+                    } // position: absolute;
+                }
+        }
+    }
+}
+    footer {
+        
+        z-index: 30;
+        background-color: #fff;
+        flex-basis: rem(100);
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: rem(20) 0;
+        .left {
+            display: flex;
+            .Brand-close {
+                height: rem(40);
+                margin: rem(12);
+            }
+            .Brand-pic {
+                height: rem(72);
+                padding-left: rem(15);
+                vertical-align: middle;
+            }
+            .Brand-buttom-title {
+                padding-left: rem(15);
+                .title1 {
+                    font-size: rem(32);
+                    margin-bottom: 0;
+                }
+                .title2 {
+                    font-size: rem(24);
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .Brand-open {
+            width: rem(154);
+            height: rem(66);
+            border: 1px solid #000;
+            background-color: #ff841d;
+            border: 0;
+            border-radius: rem(15);
+            float: right;
+        }
+    }
+}

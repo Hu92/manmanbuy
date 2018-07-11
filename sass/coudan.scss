@@ -1,0 +1,144 @@
+body {
+    background-color: #f1f1f1;
+    //顶部
+    .top {
+        height: 45px;
+        background-color: #ff8b00;
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 5px;
+        box-shadow: 0px 2px 3px #dddddd;
+        .mui-icon-back {
+            line-height: 45px;
+            color: white;
+        }
+        .title {
+            line-height: 45px;
+            color: white;
+            font-size: 20px;
+        }
+        .app {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            .download {
+                font-size: 12px;
+            }
+        }
+    }
+    //分类
+    .sort {
+        height: 38px;
+        border-bottom: 1px solid #dadada;
+        display: flex;
+        background-color: #fff;
+        .right {
+            flex-basis: 45px;
+            line-height: 38px;
+            text-align: center;
+            vertical-align: middle;
+            color: #565656;
+        }
+        .left {
+            flex: 1;
+            display: flex;
+            border-right: 1px solid #dadada;
+            p {
+                flex: 1;
+                margin: 0;
+                line-height: 38px;
+                text-align: center;
+                color: #000;
+                vertical-align: middle;
+                font-size: 15px;
+                color: #565656;
+                span {
+                    vertical-align: middle; //line-height: 15px;
+                }
+                .fa-sort-down{
+                    font-size: 18px;
+                    margin-left: 8px;
+                    margin-bottom: 5px;
+                }
+                .fa-sort-up{
+                    font-size: 18px;
+                    margin-left: 8px;
+                    margin-bottom: -10px;
+                }
+            }
+        }
+    }
+    //列表
+    .list {
+        display:none;
+        position: absolute;
+        left:0;
+        top:83px;
+        width:100%;
+        ul {
+            padding: 0px;
+            margin: 0;
+            li {
+                font-size: 15px;
+                color: #565656;
+                list-style: none;
+                padding: 0px 10px;
+                height:45px;
+                line-height: 45px;
+                border-bottom: 1px solid #dadada;
+                background-color: #fff;
+                span{
+                    float:right;
+                    line-height: 45px;
+                    color:#ff8b00;
+                    font-size: 18px;
+                    font-weight: normal;
+
+                }
+            }
+        }
+    }
+    //产品
+    .products{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .product{
+            width:50%;
+           padding:10px 5px 10px 10px;
+           margin-bottom: -10px;
+           a{
+               display:block;
+               background-color: #fff;
+               img{
+                   width:100%;
+                  
+               }
+               .desc{
+                   font-size: 12px;
+                   color:#000;
+                   margin:0;
+                   width:100%;
+                   height:21px;
+                   overflow: hidden;
+               }
+               .price{
+                   color:red;
+                   margin:0;
+                   span{
+                       &:nth-child(2){
+                           font-size: 20px;
+                       }
+                   }
+               }
+               
+           }
+           &:nth-child(2n){
+            padding:10px 10px 10px 5px;
+           }
+        }
+        
+    }
+}

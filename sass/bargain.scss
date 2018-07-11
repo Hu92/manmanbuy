@@ -1,0 +1,286 @@
+@function pr($p) {
+    @return $p/75+rem;
+}
+
+.content {
+    background-color: #faf5f6;
+    .banner {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+    // 热销
+    .hot{
+        display: flex;
+        padding: pr(20);
+        background-color: #fff;
+        a{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: pr(20);
+            font-size: pr(24);
+            color: #000;
+            span{
+                margin-top: pr(20);
+            }
+            img{
+                width: 80%;
+            }
+        }
+    }
+
+    // 人气榜
+    .popular{
+        background-color: #fff;
+        margin: pr(20) 0;
+        padding:pr(10) pr(20);
+        .top{
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: pr(10);
+            align-items: center;
+            h3{
+                font-size: pr(28);
+                color: #666;
+                border-left: pr(5) solid #fe4a65;
+                padding-left: pr(20);
+                height: 16px;
+                line-height: 16px;
+
+            }
+            .title{
+                font-size: pr(24);
+            }
+        }
+        .bottom{
+            height: pr(360);
+            // background-color: red;
+            a{
+
+                img{
+                    width: 100%;
+                }
+                p{
+                    font-size: pr(24);
+                    color: #666;
+                }
+                .price{
+                    display: flex;
+                    .old{
+                        color: red;
+                        font-weight: 700;
+                        font-size: pr(30);
+                    }
+                    .text{
+                        margin-left: pr(10);
+                        color: #ccc;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .discounts{
+        background-color: #fff;
+        margin: pr(20) 0;
+        padding:pr(10) pr(20);
+        .top{
+            display: flex;
+            padding-bottom: pr(10);
+            align-items: center;
+            h3{
+                font-size: pr(28);
+                color: #666;
+                border-left: pr(5) solid #fe4a65;
+                padding-left: pr(20);
+                height: 16px;
+                line-height: 16px;
+
+            }
+            .title{
+                font-size: pr(24);
+                color: #fe4a65;
+                background: #ffe5ec;
+                height: pr(32);
+                padding: 0 pr(10);
+                margin-left: pr(18);
+                border-radius: pr(8);
+                line-height: pr(32);
+            }
+        }
+
+        .bottom{
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                li{
+                    flex-basis: 50%;
+                    padding: pr(15);
+                    .cover{
+                        position: relative;
+                        img{
+                            width: 100%;
+                        }
+                        .coupon{
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            z-index: 10;
+                            font-size: 10px;
+                            text-align: center;
+                            height: 16px;
+                            line-height: 16px;
+                            color: #fff;
+                            padding: 0 5px;
+                            background-color: #e53563;
+                        }
+                        
+                    }
+
+                    .info{
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        .titles{
+                            font-size: pr(24);
+                            line-height: pr(36);
+                            text-align: center;
+                            height: pr(36);
+                        }
+                        .text{
+                            color: #a3a3a3;
+                            font-size: pr(20);
+                        }
+                        .price{
+                            margin-right: pr(80);
+                            color: #ff4b5f;
+                        }
+                        .sold{
+                            color: #a3a3a3;
+                            font-size: pr(20);
+                        }
+                    }
+                }
+            }
+        }
+
+        
+    }
+    .footer {
+        height: pr(192);
+        background-color: #efefef;
+        .foot_top {
+            margin-top: pr(50);
+            display: flex;
+            a {
+                color: #000;
+                height: pr(68);
+                text-align: center;
+                // flex: 1;
+                width: pr(222);
+                border: 1px solid #c4c4c4;
+                line-height: pr(68);
+                font-size: pr(28);
+                &:nth-child(1){
+                    border-left: none;
+                }
+                &:nth-child(3){
+                    border-right: none;
+                    width: pr(300);
+                    img {
+                        width: pr(30);
+                        display: inline-block;
+                        
+                    }
+                }
+    
+    
+            }
+        }
+        .foot_di {
+            .box {
+                padding: pr(37) 0;
+                p {
+                    text-align: center;
+                    margin: 0;
+                    line-height:pr(36);
+                    .app {
+                        color: #ff0000;
+                    }
+                    .man {
+                        color: #000000;
+                    }
+                    &:nth-child(1){
+                        font-size: pr(24)
+                        
+                    }
+                    &:nth-child(2){
+                        font-size: pr(20);
+                        line-height:pr(26);
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+
+// 遮罩层 分类
+.category {
+    position: fixed;
+    top: 44px;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    &.active {
+        display: none;
+    }
+    .mask {
+        background: rgba(0, 0, 0, .5);
+        opacity: 0.1;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    .category-content {
+        width: 100%;
+        height: pr(540);
+        position: absolute;
+        z-index: 99999;
+        background-color: #fff;
+        ul {
+            display: flex;
+            flex-wrap: wrap; // justify-content: space-around;
+            // align-items: center;
+            li {
+                text-align: center;
+                width: 25%;
+                height: pr(102);
+                border-right: pr(1) solid #ccc;
+                border-bottom: pr(1) solid #ccc;
+                line-height: pr(102);
+                a {
+                    color: #333;
+                    font-size: pr(28);
+                }
+            }
+        }
+        .upmenu {
+            display: block;
+            width: 120px;
+            border-radius: 1px;
+            border: #ff7f90 1px solid;
+            text-align: center;
+            color: #ff7f90;
+            font-size: 13px;
+            line-height: 24px;
+            margin: pr(36) auto;
+            box-sizing: border-box
+        }
+    }
+}

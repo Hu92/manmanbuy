@@ -1,0 +1,308 @@
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img, p, b {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+input {
+  vertical-align: middle;
+  border: 0;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: #9a9a9a;
+}
+
+html, body {
+  height: 100%;
+  font-size: 14px;
+  background-color: #fff;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container .header {
+  flex-basis: 1.1733333333rem;
+  background-color: #fe4a65;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.container .header .logo {
+  color: #fff;
+  font-size: 0.4266666667rem;
+  font-weight: 700;
+  margin-left: 0.1333333333rem;
+}
+.container .header .searchbar {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: 0.3733333333rem;
+}
+.container .header .searchbar input {
+  padding: 0 0.2666666667rem;
+  border: 0;
+  margin: 0;
+  width: 7.1733333333rem;
+  height: 0.7466666667rem;
+  font-size: 0.3733333333rem;
+  border-radius: 0.1333333333rem;
+  font-size: 0.32rem;
+}
+.container .header .icon {
+  color: #fff;
+}
+.container .header .icon span {
+  margin-right: 0.4rem;
+  font-size: 0.4266666667rem;
+}
+.container .content {
+  flex: 1;
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.container header {
+  width: 100%;
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff841d;
+  color: #fff;
+  padding-right: 10px;
+}
+.container header h1 {
+  font-size: 22px;
+}
+.container header > a {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container header > a > span:nth-child(1) {
+  width: 25px;
+  height: 20px;
+}
+.container header > a > span:nth-child(2) {
+  font-size: 1px;
+}
+.container main {
+  background-color: #fff;
+  padding: 15px 10px 0 10px;
+}
+.container main .product {
+  width: 100%;
+}
+.container main .product h3 {
+  font-size: 18px;
+  font-weight: 800;
+  color: #5a5a5a;
+  margin-bottom: 10px;
+}
+.container main .product h4 {
+  color: #ff6c00;
+  font-size: 15px;
+}
+.container main .product .info {
+  margin: 12px auto;
+  color: #999999;
+  font-size: 12px;
+  line-height: 24px;
+}
+.container main .product .content .picwrap {
+  width: 120px;
+  float: right;
+  margin: 12px auto auto 10px;
+  overflow: hidden;
+}
+.container main .product .content .picwrap img {
+  width: 100%;
+}
+.container main .product .content .conn {
+  word-break: break-all;
+  line-height: 24px;
+  color: #606060;
+  padding-bottom: 20px;
+}
+.container main .product .content .conn p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #606060;
+  word-break: break-all;
+  margin: 6px auto;
+}
+.container main .product .content .conn a {
+  color: #4682c5;
+  text-decoration: none;
+  word-break: break-all;
+}
+.container main .product .golink {
+  margin-top: 40px;
+}
+.container main .product .golink a {
+  height: 40px;
+  line-height: 40px;
+  display: block;
+  margin: 20px 10px;
+  background: #FF9000;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 14px;
+  color: #ffffff;
+}
+.container main .product .cu-content-pl {
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+}
+.container main .product .cu-content-pl .tit {
+  height: 40px;
+  line-height: 32px;
+}
+.container main .product .cu-content-pl .form textarea {
+  border-bottom: none;
+}
+.container main .product .cu-content-pl .form .ctrl {
+  position: relative;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-top: none;
+  background-color: #fbfbfb;
+  width: 100%;
+  height: 40px;
+  margin-top: -25px;
+}
+.container main .product .cu-content-pl .form .ctrl input {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #ff841d;
+  border: 2px solid #ff841d;
+}
+.container main .product .cu-content-pl #newcomment {
+  font-size: 16px;
+  padding: 6px 8px;
+}
+.container main .product .cu-content-pl .list {
+  padding: 18px 10px;
+  background-color: #FFFFFF;
+}
+.container main .product .cu-content-pl .list ul li {
+  margin-bottom: 8px;
+}
+.container main .product .cu-content-pl .list .userimg {
+  width: 40px;
+  float: left;
+  overflow: hidden;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.container main .product .cu-content-pl .list .userimg img {
+  width: 100%;
+}
+.container main .product .cu-content-pl .list .con .clearfix {
+  display: flex;
+  justify-content: space-between;
+}
+.container main .product .cu-content-pl .list .con .clearfix .username {
+  color: #96bdd7;
+}
+.container main .product .cu-content-pl .list .con .content {
+  margin-top: 5px;
+}
+.container .nav {
+  width: 100%;
+  height: 38px;
+  margin: 20px 0;
+  padding-left: 8px;
+  background: linear-gradient(to bottom, #fff, #ccc);
+  font-size: 14px;
+  color: black;
+  line-height: 38px;
+  overflow: hidden;
+}
+.container .nav > a {
+  height: 100%;
+  color: black;
+  font-size: 14px;
+}
+.container footer {
+  width: 100%;
+  height: 96px;
+  background-color: #efefef;
+}
+.container footer .top {
+  width: 100%;
+  height: 36px;
+  display: flex;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.container footer .top > a {
+  height: 36px;
+  color: black;
+  font-size: 14px;
+  text-align: center;
+  line-height: 36px;
+  padding: 0 20px;
+}
+.container footer .top > a:nth-child(1) {
+  width: 30%;
+  border-right: 1px solid #ccc;
+}
+.container footer .top > a:nth-child(2) {
+  width: 30%;
+  border-right: 1px solid #ccc;
+}
+.container footer .top > a:nth-child(3) {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+.container footer .top > a:nth-child(3) > div {
+  width: 15px;
+}
+.container footer .top > a:nth-child(3) img {
+  margin-top: -3px;
+  width: 100%;
+}
+.container footer .bottom {
+  width: 100%;
+  height: 60px;
+  padding: 15px;
+}
+.container footer .bottom P {
+  height: 15px;
+  margin: 0;
+  text-align: center;
+}
+.container footer .bottom P a:nth-child(1) {
+  color: red;
+}
+.container footer .bottom P a:nth-child(2) {
+  color: black;
+}
+.container footer .bottom P a:nth-child(3) {
+  color: #666;
+}
+
+/*# sourceMappingURL=03.3-gnzk.css.map */

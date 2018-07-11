@@ -1,0 +1,257 @@
+@function pr($p) {
+    @return $p/75+rem;
+}
+
+.container {
+    .header {
+        justify-content: space-between;
+        .searchbar {
+            color: #fff;
+            .title {
+                color: #fff;
+                font-size: pr(32);
+            }
+        }
+        .icon {
+            margin-right: 10px;
+            img {
+                width: pr(60);
+            }
+        }
+    }
+    .content {
+        background-color: #faf5f6;
+        .tab {
+            margin-bottom: pr(20);
+            ul {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                li {
+                    flex-basis: 25%;
+                    text-align: center;
+                    height: pr(100);
+                    line-height: pr(100);
+                    background-color: #fff;
+                    &.active {
+                        border-bottom: pr(1) solid #fe4a65;
+                        a {
+                            color: #fe4a65;
+                        }
+                    }
+                }
+            }
+        }
+        .details {
+            ul {
+                li {
+                    margin-bottom: pr(20);
+                    display: flex;
+                    background-color: #fff;
+                    .img {
+                        // width: 150px;
+                        flex-basis: pr(284);
+                        height: 120px;
+                        padding: 10px;
+                        img {
+                            height: 100%;
+                        }
+                    }
+                    .matter {
+                        flex: 1;
+                        .productName {
+                            font-size: 0.32rem;
+                            line-height: pr(32);
+                            height: pr(32);
+                            color: #333;
+                        }
+
+                        .productPrice {
+                            margin: pr(20) 0;
+                            color: #fe4a65;
+                            i {
+                                font-style: normal;
+                            }
+                            del {
+                                color: #666;
+                                margin-left: pr(40);
+                            }
+                        }
+                        // 已领多少优惠券
+                        .bar {
+                            i {
+                                display: inline-block;
+                                position: relative;
+                                top: pr(4);
+                                width: 100px;
+                                background-color: #ffb7b7;
+                                height: pr(28);
+                                border-radius: pr(10);
+                                em {
+                                    display: block;
+                                    height: 100%;
+                                    background-color: #fe4a65;
+                                    border-radius: pr(10);
+                                }
+                                span {
+                                    position: absolute;
+                                    top: pr(-4);
+                                    left: pr(88);
+                                    font-size: pr(20);
+                                    color: #fff;
+                                    font-style: normal;
+                                }
+                            }
+                            b {
+                                font-size: pr(20);
+                                color: #fe4a65;
+                                margin-left: pr(20);
+                            }
+                        }
+                        // 领取优惠券
+                        .discounts{
+                            margin: pr(20) 0;
+                            display: flex;
+                            justify-content: space-between;
+                            a{
+
+                                &:nth-child(1){                               
+                                    font-size: pr(24);
+                                    height: pr(40);
+                                    width: pr(220);
+                                    border: pr(2) dashed #fe4a65;
+                                    color: #ff7f90;
+                                    text-align: center;
+                                }
+
+                                &:nth-child(2){
+                                    font-size: pr(24);
+                                    height: pr(40);
+                                    width: pr(120);
+                                    background-color: #ff5e5d;
+                                    color: #fff;
+                                    line-height: pr(40);
+                                    text-align: center;
+                                    border-radius: pr(10);
+                                    font-weight: 100;
+                                    margin-right: pr(20);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer {
+            height: pr(192);
+            background-color: #efefef;
+            .foot_top {
+                margin-top: pr(50);
+                display: flex;
+                a {
+                    color: #000;
+                    height: pr(68);
+                    text-align: center;
+                    // flex: 1;
+                    width: pr(222);
+                    border: 1px solid #c4c4c4;
+                    line-height: pr(68);
+                    font-size: pr(28);
+                    &:nth-child(1){
+                        border-left: none;
+                    }
+                    &:nth-child(3){
+                        border-right: none;
+                        width: pr(300);
+                        img {
+                            width: pr(30);
+                            display: inline-block;
+                            
+                        }
+                    }
+        
+        
+                }
+            }
+            .foot_di {
+                .box {
+                    padding: pr(37) 0;
+                    p {
+                        text-align: center;
+                        margin: 0;
+                        line-height:pr(36);
+                        .app {
+                            color: #ff0000;
+                        }
+                        .man {
+                            color: #000000;
+                        }
+                        &:nth-child(1){
+                            font-size: pr(24)
+                            
+                        }
+                        &:nth-child(2){
+                            font-size: pr(20);
+                            line-height:pr(26);
+                        }
+                    }
+                }
+                
+            }
+        }
+    } // 遮罩层 分类
+    .category {
+        position: fixed;
+        top: 44px;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+        &.active {
+            display: none;
+        }
+        .mask {
+            background: rgba(0, 0, 0, .5);
+            opacity: 0.1;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+        .category-content {
+            width: 100%;
+            height: pr(540);
+            position: absolute;
+            z-index: 99999;
+            background-color: #fff;
+            ul {
+                display: flex;
+                flex-wrap: wrap; // justify-content: space-around;
+                // align-items: center;
+                li {
+                    text-align: center;
+                    width: 25%;
+                    height: pr(102);
+                    border-right: pr(1) solid #ccc;
+                    border-bottom: pr(1) solid #ccc;
+                    line-height: pr(102);
+                    a {
+                        color: #333;
+                        font-size: pr(28);
+                    }
+                }
+            }
+            .upmenu {
+                display: block;
+                width: 120px;
+                border-radius: 1px;
+                border: #ff7f90 1px solid;
+                text-align: center;
+                color: #ff7f90;
+                font-size: 13px;
+                line-height: 24px;
+                margin: pr(36) auto;
+                box-sizing: border-box
+            }
+        }
+    }
+}
