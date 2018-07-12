@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>比价搜索</title>
+    <!-- zepto js -->
+    <script src="./lib/bootstrap/js/jquery-1.12.4.min.js"></script>
+    <script src="./lib/zepto/zepto.min.js"></script>
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="./lib/mui/js/mui.min.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <!-- 自己写的js -->
+    <script src="./js/common.js"></script>
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- mui css -->
+    <link rel="stylesheet" href="lib/mui/css/mui.css">
+    <!-- 字体图标 -->
+    <link rel="stylesheet" href="lib/fa/css/font-awesome.css">
+    <!-- 自己写的css 这个css不要轻易修改 如果公共部分不同到自己的css里写权重比他高就可以改的到-->
+    <script src="./js/search.js"></script>
+    <link rel="stylesheet" href="./css/search.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- 内部滚动 -->
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <!--这里放置真实显示的DOM内容-->
+                <div class="topbar">
+                    <div class="logo">
+                        <a href="" title="慢慢买比价网--手机版">
+                            <img src="https://img.alicdn.com/imgextra/i1/690311/TB2cMR0aQUmBKNjSZFOXXab2XXa_!!690311.png" alt="慢慢买比价网--手机版">
+                        </a>
+                    </div>
+                    <div class="appload">
+                        <a href="" title="手机app下载">
+                            <img src="https://img.alicdn.com/imgextra/i2/690311/TB2beKvaTXYBeNkHFrdXXciuVXa_!!690311.png" alt="手机app下载">
+                        </a>
+                    </div>
+                </div>
+                <div class="searchbar">
+                    <input type="text" class="search" placeholder="请输入你想比价的商品">
+                    <button class="ssbtn">搜索</button>
+                </div>
+                <div class="box">
+                    <div class="list">
+                        <!-- 此处数据需要动态渲染 -->
+                    </div>
+                    <div class="seccategory">
+                        <!-- 此处数据需要动态渲染 -->
+                       
+                    </div>
+                </div>
+                <!--  -->
+                <script type=text/html id="dropdownmenu">
+                    {{each result}}
+                    <div class="dropdown-toggle" data-id="{{$value.titleId}}">
+                        <a href="" class="categotytitle">{{$value.title}}</a>
+                        <span class="mui-icon mui-icon-arrowdown"></span>
+                    </div>
+                    <ul class="ul1{{$value.titleId}}">
+
+                    </ul>
+                    {{/each}}
+                </script>
+                <script type="text/html" id="seccateitem">
+
+                    {{each result}}
+                    <li>
+                        <a href="product.html?categoryId={{$value.categoryId}}">{{$value.category}}</a>
+                    </li>
+
+                    {{/each}}
+
+
+                </script>
+                <div class="footer">
+                    <div class="foottop">
+                        <a href="">登录</a>
+                        <a href="">注册</a>
+                        <a href="">
+                            <img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a>
+                    </div>
+                    <div class="footbottom">
+                        <p class="download">
+                            <a href="">手机APP下载</a>
+                            <a href="">慢慢买手机版</a> -- 掌上比价平台</p>
+                        <p class="address">m.manmanbuy.com</p>
+                    </div>
+                </div>
+
+                <!--这里放置真实显示的DOM内容-->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
